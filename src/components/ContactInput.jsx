@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ContactInput extends React.Component {
   constructor(props) {
@@ -49,3 +49,7 @@ class ContactInput extends React.Component {
 }
 
 export default ContactInput;
+
+ContactInput.propTypes = {
+  addContact: PropTypes.func.isRequired,
+}
